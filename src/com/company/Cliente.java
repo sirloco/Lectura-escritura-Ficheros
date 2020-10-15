@@ -4,13 +4,13 @@ import java.util.List;
 
 public class Cliente implements Serializable {
 
-  private final String[] clientes;
+  private final String[][] clientes;
 
-  public Cliente(String[] clientes) {
+  public Cliente(String[][] clientes) {
     this.clientes = clientes;
   }
 
-  public String[] getClientes() {
+  public String[][] getClientes() {
     return clientes;
   }
 }

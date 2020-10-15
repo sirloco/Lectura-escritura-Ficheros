@@ -29,7 +29,7 @@ public class CrearFicheroMenu {
 
 
   {
-    try {
+    /*try {
       ObjectInputStream fin = new ObjectInputStream(new FileInputStream(".\\Archivos\\Menu.dat"));
       Menu menu = (Menu) fin.readObject();
       for (String primeros : menu.getPrimeros()) {
@@ -38,7 +38,7 @@ public class CrearFicheroMenu {
 
     } catch (IOException | ClassNotFoundException ioException) {
       ioException.printStackTrace();
-    }
+    }*/
   }
 
 }
