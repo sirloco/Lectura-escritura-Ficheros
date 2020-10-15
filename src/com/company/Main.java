@@ -10,5 +10,7 @@ public class Main {
 
         Servicio.nuevoServicio();
 
+        CrearFicheroSintomas crearFicheroSintomas = new CrearFicheroSintomas();
+
     }
 }

@@ -22,6 +22,7 @@ public class Servicio {
         {
 
             List<Comanda> comandas = new ArrayList<>();
+            List<Cliente> clientes = new ArrayList<>();
 
             try {
 
@@ -54,6 +55,10 @@ public class Servicio {
                             comanda.getSegundo() + " de segundo " + comanda.getPostre() + " de postre");
                 }
 
+                //se comprueba si existen alergias con los comensales
+                Incidencias.compruebaIncidencias(comandas, cli);
+
+                //se crea el documento xml con las comandas
                 creaXml(comandas);
 
             } catch (IOException | ClassNotFoundException ioException) {
@@ -125,7 +130,6 @@ public class Servicio {
                 CrearElemento("Postre", comanda.getPostre(), raiz, document);
 
             }
-
 
             Source source = new DOMSource(document);
             Result result = new StreamResult(new java.io.File(".\\Archivos\\Empleados.xml"));
