@@ -1,8 +1,6 @@
 package com.company;
 
 import org.w3c.dom.*;
-
-import javax.xml.*;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -49,11 +47,12 @@ public class Servicio {
 
                 }
 
-                //todo esto acordarse de borrarlo
+
                 for (Comanda comanda : comandas) {
                     System.out.println(comanda.getCliente() + " ha comido " + comanda.getPrimero() + " de primero " +
                             comanda.getSegundo() + " de segundo " + comanda.getPostre() + " de postre");
                 }
+                System.out.println("///////////////////////////////////////////////////////////////");
 
                 //se comprueba si existen alergias con los comensales
                 Incidencias.compruebaIncidencias(comandas, cli);

@@ -6,11 +6,15 @@ public class Main {
 
         CrearFicheroMenu menu = new CrearFicheroMenu();
 
+        CrearFicheroAlergias crearFicheroAlergias = new CrearFicheroAlergias();
+
         CrearFicheroClientes clientes = new CrearFicheroClientes();
+
+        CrearFicheroSintomas crearFicheroSintomas = new CrearFicheroSintomas();
 
         Servicio.nuevoServicio();
 
-        CrearFicheroSintomas crearFicheroSintomas = new CrearFicheroSintomas();
+
 
     }
 }
